@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demoblaze.com_testing"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.757">
+    <properties></properties>
+
+
+
+            <testcase
+                name="cartOrderBlankTests"
+                time="2.814"
+                classname="CartTests">
+            </testcase>
+            <testcase
+                name="cartOrderTests"
+                time="0.943"
+                classname="CartTests">
+            </testcase>
+</testsuite>

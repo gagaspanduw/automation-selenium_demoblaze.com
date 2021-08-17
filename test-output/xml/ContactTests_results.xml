@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demoblaze.com_testing"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.598">
+    <properties></properties>
+
+
+
+            <testcase
+                name="contactTest"
+                time="0.598"
+                classname="ContactTests">
+            </testcase>
+</testsuite>

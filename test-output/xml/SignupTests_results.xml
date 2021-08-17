@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demoblaze.com_testing"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.008">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testSignupUserExist"
+                time="5.644"
+                classname="SignupTests">
+            </testcase>
+            <testcase
+                name="testSignupInputBlank"
+                time="0.364"
+                classname="SignupTests">
+            </testcase>
+</testsuite>
