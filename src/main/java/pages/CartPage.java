@@ -14,6 +14,7 @@ public class CartPage {
     private By monthField = By.id("month");
     private By yearField = By.id("year");
     private By resultPurchase = By.cssSelector(".sweet-alert > h2");
+    private By acceptPurchaseButton = By.cssSelector(".confirm");
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
@@ -49,6 +50,18 @@ public class CartPage {
 
     public void setYearField(String year){
         driver.findElement(yearField).sendKeys(year);
+    }
+
+    public void clickOkPurchase(){
+        driver.findElement(acceptPurchaseButton).click();
+    }
+
+    public String alertGetText(){
+        return driver.switchTo().alert().getText();
+    }
+
+    public void alertAccept(){
+        driver.switchTo().alert().accept();
     }
 
     public String getResult(){

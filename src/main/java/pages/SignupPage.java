@@ -27,6 +27,10 @@ public class SignupPage {
         driver.findElement(signupButton).click();
     }
 
+    public void alertAccept(){
+        driver.switchTo().alert().accept();
+    }
+
     public String alertGetText(){
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.alertIsPresent());

@@ -35,6 +35,13 @@
             <artifactId>selenium-support</artifactId>
             <version>3.141.59</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.2.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>

@@ -8,7 +8,7 @@ public class CartTests extends BaseTests {
 
     @Test
     public void cartOrderTests(){
-        CartPage cartPage = homePage.clickCart();
+        var cartPage = homePage.clickCart();
         cartPage.clickPlaceOrder();
         cartPage.setNameField("test name");
         cartPage.setCountryField("test country");
@@ -18,13 +18,15 @@ public class CartTests extends BaseTests {
         cartPage.setYearField("test year");
         cartPage.clickPurchase();
         assertTrue(cartPage.getResult().contains("Thank you for your purchase!"), "Alert message incorrect");
+        cartPage.clickOkPurchase();
     }
 
     @Test
     public void cartOrderBlankTests(){
-        CartPage cartPage = homePage.clickCart();
+        var cartPage = homePage.clickCart();
         cartPage.clickPlaceOrder();
         cartPage.clickPurchase();
-        assertTrue(cartPage.getResult().contains("Please fill out Name and Creditcard."), "Alert message incorrect");
+        assertTrue(cartPage.alertGetText().contains("Please fill out Name and Creditcard."), "Alert message incorrect");
+        cartPage.alertAccept();
     }
 }

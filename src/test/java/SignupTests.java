@@ -14,6 +14,7 @@ public class SignupTests extends BaseTests {
         signupPage.setPasswordField("admin");
         signupPage.clickSignupButton();
         assertTrue(signupPage.alertGetText().contains("This user already exist."), "Alert text is incorrect");
+        signupPage.alertAccept();
     }
 
     @Test
@@ -21,6 +22,7 @@ public class SignupTests extends BaseTests {
         SignupPage signupPage = homePage.clickSignUp();
         signupPage.clickSignupButton();
         assertTrue(signupPage.alertGetText().contains("Please fill out Username and Password."), "Alert text is incorrect");
+        signupPage.alertAccept();
     }
 
 }
